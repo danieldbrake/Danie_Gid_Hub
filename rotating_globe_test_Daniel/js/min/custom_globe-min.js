@@ -1,0 +1,1 @@
+$.getJSON("json/world-countries.json",function(t){for(var e=0;e<t.features.length;e++){var r=t.features[e].id,i=t.features[e].properties.name;$(document).on("click","#"+r,function(){var t=$(this).find("title").text();$(this).siblings().attr("class","#aaa"),$(this).attr("class","red"),$(".project_title").find("p").remove(),$(".project_title").append("<p>"+t+"</p>")})}});

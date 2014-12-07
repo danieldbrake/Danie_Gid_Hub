@@ -1,0 +1,17 @@
+h1 {
+  margin: 0;
+  text-align: center; }
+
+#pie_chart_svg {
+  width: 500px;
+  height: 500px; }
+
+#canvas_globe {
+  width: 800px;
+  height: 800px; }
+
+.red {
+  fill: red; }
+
+circle {
+  fill: #000; }

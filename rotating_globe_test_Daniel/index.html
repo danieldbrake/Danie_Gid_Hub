@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title></title>
+    <script src="js/jquery.js"></script>
+    <script src="js/d3.min.js"></script>
+    <script src="js/geo.js"></script>
+
+    <script src="js/custom_globe.js"></script>
+
+    <link rel='stylesheet' href='css/normalize.css'>
+    <link rel='stylesheet' href='css/main.css'>
+
+    <style type="text/css">
+    </style>
+
+  </head>
+
+  <body>
+    <div class="container">
+
+		<div class="project_title">
+			<h1>SCARCITY OF WATER</h1>
+			<p class="country_title"></p>
+		</div>
+
+		<div id="canvas_globe">
+
+			<svg id="canvas_globe_svg" width="800" height="800"></svg>
+
+			<div>
+				<select id="proj">
+					<option value="equalarea">equalarea</option>
+					<option value="equidistant">equidistant</option>
+					<option value="gnomonic">gnomonic</option>
+					<option value="orthographic" selected>orthographic</option>
+					<option value="stereographic">stereographic</option>
+				</select>
+			</div>
+
+			<div>
+				<label for="animate">animate:</label>
+				<input id="animate" type="checkbox" checked>
+			</div>      
+
+        </div>
+
+		<div id="pie_chart">
+
+			<form>
+			  <label><input type="radio" name="dataset" value="USA" checked> USA</label>
+			  <label><input type="radio" name="dataset" value="CANADA"> CANADA</label>
+			</form>
+
+			<svg id="pie_chart_svg" width="500" height="500"></svg>
+		</div>
+
+
+      </div>
+
+
+
+    <script src="js/vis.js"></script>
+    <script src="charts_js/pie_chart_usa.js"></script>
+ 
+    
+
+
+  </body>
+</html>
